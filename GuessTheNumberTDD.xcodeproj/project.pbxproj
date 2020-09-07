@@ -13,7 +13,10 @@
 		5664D00025058A3D00C9FF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5664CFFE25058A3D00C9FF73 /* Main.storyboard */; };
 		5664D00225058A4500C9FF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5664D00125058A4500C9FF73 /* Assets.xcassets */; };
 		5664D00525058A4500C9FF73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5664D00325058A4500C9FF73 /* LaunchScreen.storyboard */; };
-		5664D01025058A4500C9FF73 /* GuessTheNumberTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664D00F25058A4500C9FF73 /* GuessTheNumberTDDTests.swift */; };
+		5664D01C25058CA900C9FF73 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664D01B25058CA900C9FF73 /* AppModel.swift */; };
+		5664D02125058D0300C9FF73 /* AppModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5664D02025058D0300C9FF73 /* AppModelTest.swift */; };
+		56AFB84B2505926600E59174 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AFB84A2505926600E59174 /* IntExtension.swift */; };
+		56AFB84D2506780900E59174 /* ProcessResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AFB84C2506780900E59174 /* ProcessResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +39,11 @@
 		5664D00425058A4500C9FF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5664D00625058A4500C9FF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5664D00B25058A4500C9FF73 /* GuessTheNumberTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessTheNumberTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5664D00F25058A4500C9FF73 /* GuessTheNumberTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheNumberTDDTests.swift; sourceTree = "<group>"; };
 		5664D01125058A4500C9FF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5664D01B25058CA900C9FF73 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		5664D02025058D0300C9FF73 /* AppModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModelTest.swift; sourceTree = "<group>"; };
+		56AFB84A2505926600E59174 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		56AFB84C2506780900E59174 /* ProcessResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 		5664CFF725058A3C00C9FF73 /* GuessTheNumberTDD */ = {
 			isa = PBXGroup;
 			children = (
+				56AFB8492505925300E59174 /* Extensions */,
+				5664D01A25058C8A00C9FF73 /* App Model */,
 				5664CFF825058A3D00C9FF73 /* AppDelegate.swift */,
 				5664CFFA25058A3D00C9FF73 /* SceneDelegate.swift */,
 				5664CFFC25058A3D00C9FF73 /* ViewController.swift */,
@@ -93,10 +101,35 @@
 		5664D00E25058A4500C9FF73 /* GuessTheNumberTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				5664D00F25058A4500C9FF73 /* GuessTheNumberTDDTests.swift */,
+				5664D01D25058CB700C9FF73 /* App Model */,
 				5664D01125058A4500C9FF73 /* Info.plist */,
 			);
 			path = GuessTheNumberTDDTests;
+			sourceTree = "<group>";
+		};
+		5664D01A25058C8A00C9FF73 /* App Model */ = {
+			isa = PBXGroup;
+			children = (
+				5664D01B25058CA900C9FF73 /* AppModel.swift */,
+				56AFB84C2506780900E59174 /* ProcessResult.swift */,
+			);
+			path = "App Model";
+			sourceTree = "<group>";
+		};
+		5664D01D25058CB700C9FF73 /* App Model */ = {
+			isa = PBXGroup;
+			children = (
+				5664D02025058D0300C9FF73 /* AppModelTest.swift */,
+			);
+			path = "App Model";
+			sourceTree = "<group>";
+		};
+		56AFB8492505925300E59174 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				56AFB84A2505926600E59174 /* IntExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +185,7 @@
 					};
 					5664D00A25058A4500C9FF73 = {
 						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
 						TestTargetID = 5664CFF425058A3C00C9FF73;
 					};
 				};
@@ -203,6 +237,9 @@
 				5664CFFD25058A3D00C9FF73 /* ViewController.swift in Sources */,
 				5664CFF925058A3D00C9FF73 /* AppDelegate.swift in Sources */,
 				5664CFFB25058A3D00C9FF73 /* SceneDelegate.swift in Sources */,
+				5664D01C25058CA900C9FF73 /* AppModel.swift in Sources */,
+				56AFB84D2506780900E59174 /* ProcessResult.swift in Sources */,
+				56AFB84B2505926600E59174 /* IntExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5664D01025058A4500C9FF73 /* GuessTheNumberTDDTests.swift in Sources */,
+				5664D02125058D0300C9FF73 /* AppModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +436,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DLVL4AD94D;
 				INFOPLIST_FILE = GuessTheNumberTDDTests/Info.plist;
@@ -410,6 +448,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.kazakova-net.GuessTheNumberTDDTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuessTheNumberTDD.app/GuessTheNumberTDD";
@@ -421,6 +460,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DLVL4AD94D;
 				INFOPLIST_FILE = GuessTheNumberTDDTests/Info.plist;

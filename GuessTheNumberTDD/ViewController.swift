@@ -8,6 +8,21 @@
 
 import UIKit
 
+extension ProcessResult {
+    var resultLabel: String {
+        switch self {
+            case .equal:
+                return "Точно!"
+            case .less:
+                return "Недолет"
+            case .greater:
+                return "Перебор"
+            case .attemptsEnded:
+                return "Попытки закончились"
+        }
+    }
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
